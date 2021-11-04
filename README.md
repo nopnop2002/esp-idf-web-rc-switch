@@ -14,6 +14,7 @@ It's a great job.
 - 315MHz/433MHz ASK Wireless transmitter like this.   
 H34A-433/H34A-315   
 SYN115   
+STX882   
 
 I used this:
 ![H3V4F-2](https://user-images.githubusercontent.com/6020549/125154180-c36bdc00-e193-11eb-9e89-5934c2db7fae.JPG)
