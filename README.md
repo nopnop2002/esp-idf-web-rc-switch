@@ -81,3 +81,5 @@ __However, changing to some pins does not work properly.__
 The WEB page is stored in the html folder.   
 You can change it as you like.   
 
+# Reference   
+https://github.com/nopnop2002/esp-idf-rc-switch
