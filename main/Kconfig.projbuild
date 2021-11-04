@@ -1,0 +1,146 @@
+menu "Application configuration"
+
+	menu "WiFi Setting"
+
+	config ESP_WIFI_SSID
+		string "WiFi SSID"
+		default "myssid"
+		help
+			SSID (network name) to connect to.
+
+	config ESP_WIFI_PASSWORD
+		string "WiFi Password"
+		default "mypassword"
+		help
+			WiFi password (WPA or WPA2) to connect to.
+
+	config ESP_MAXIMUM_RETRY
+		int "Maximum retry"
+		default 5
+		help
+			Set the Maximum retry to avoid station reconnecting to the AP unlimited when the AP is really inexistent.
+
+	config MDNS_HOSTNAME
+		string "mDNS Hostname"
+		default "esp32-server"
+		help
+			The mDNS host name used by the ESP32.
+
+	config STATIC_IP
+		bool "Enable Static IP Address"
+		default false
+		help
+			Enable Static IP Address.
+
+	config STATIC_IP_ADDRESS
+		depends on STATIC_IP
+		string "Static IP Address"
+		default "192.168.10.100"
+		help
+			Static IP Address for Station.
+
+	config STATIC_GW_ADDRESS
+		depends on STATIC_IP
+		string "Static GW Address"
+		default "192.168.10.1"
+		help
+			Static GW Address for Station.
+
+	config STATIC_NM_ADDRESS
+		depends on STATIC_IP
+		string "Static Netmask"
+		default "255.255.255.0"
+		help
+			Static Netmask for Station.
+
+	endmenu
+
+	menu "Radio Setting"
+
+	config RF_GPIO
+		int "GPIO number to RF data"
+		range 0 46
+		default 4
+		help
+			GPIO number (IOxx) to RF data.
+			Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to MOSI.
+			On the ESP32, GPIOs 35-39 are input-only so cannot be used as outputs.
+			On the ESP32-S2, GPIO 46 is input-only so cannot be used as outputs.
+
+	endmenu
+
+	menu "Outlet Setting"
+
+	choice OUTLET_TYPE
+		prompt "Outlet switches type"
+		default OUTLET_TYPE_A
+		help
+			Select Communication direction.
+		config OUTLET_TYPE_A
+			bool "Outlet Type A"
+			help
+				"Type A" is configured with a 10 pole DIP switch.
+		config OUTLET_TYPE_B
+			bool "Outlet Type B"
+			help
+				"Type B" is configured with two rotary (or sliding) switches with four setting possibilities each.
+		config OUTLET_GENERIC
+			bool "Generic Outlet"
+			help
+				Directly specify the ON and OFF codes.
+	endchoice
+
+	config SWITCH_STRING_ONE
+		depends on OUTLET_TYPE_A
+		string "Sets the first string to send"
+		default "11011"
+		help
+			Sets the first string to send.
+
+	config SWITCH_STRING_TWO
+		depends on OUTLET_TYPE_A
+		string "Sets the second string to send"
+		default "01000"
+		help
+			Sets the second string to send.
+
+	config SWITCH_VALUE_ONE
+		depends on OUTLET_TYPE_B
+		int "Sets the first value to send"
+		default 4
+		help
+			Sets the first value to send.
+
+	config SWITCH_VALUE_TWO
+		depends on OUTLET_TYPE_B
+		int "Sets the second value to send"
+		default 2
+		help
+			Sets the second value to send.
+
+	config GENERIC_VALUE_ON
+		depends on OUTLET_GENERIC
+		int "Sets the ON value to send"
+		default 10000
+		help
+			Sets the ON value to send.
+
+	config GENERIC_VALUE_OFF
+		depends on OUTLET_GENERIC
+		int "Sets the OFF value to send"
+		default 20000
+		help
+			Sets the OFF value to send.
+
+	config GENERIC_LENGTH
+		depends on OUTLET_GENERIC
+		int "Sets the bit length to send"
+		range 8 32
+		default 24
+		help
+			Sets the bit length to send.
+
+	endmenu
+
+endmenu
+
