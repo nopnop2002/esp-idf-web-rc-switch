@@ -1,6 +1,6 @@
 # esp-idf-web-rc-switch
 433/315Mhz RF ON/OFF Switch for esp-idf.   
-You can turn ON/OFF RF OUTLET using a browser.   
+You can turn ON/OFF Wireless Remote Socket Switch/Outlet Switch using a browser.   
 
 ![web-rc-switch](https://user-images.githubusercontent.com/6020549/140236843-fffad16b-087e-4785-8f26-f8f8bf7c8f12.JPG)
 
