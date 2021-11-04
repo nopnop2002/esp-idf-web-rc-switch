@@ -55,9 +55,13 @@ You can connect using mDNS name.
 ![rc_switch_typeA](https://user-images.githubusercontent.com/6020549/140236080-2baa037b-e5db-49dc-8e8b-4d9bcba95491.png)
 ![config-outlet-1](https://user-images.githubusercontent.com/6020549/140235974-edb2354b-81af-4c63-a295-abea5ec4dd57.jpg)
 
+I used the photo [here](https://github.com/sui77/rc-switch/wiki/HowTo_OperateLowCostOutlets).   
+
 - With two rotary (or sliding) switches with four setting possibilities each.   
 ![rc_switch_typeB](https://user-images.githubusercontent.com/6020549/140236100-f40c300e-b632-460d-8e31-0d74db8d7b64.png)
 ![config-outlet-2](https://user-images.githubusercontent.com/6020549/140235976-d145fd2d-79b3-406c-90fd-7b39677193f1.jpg)
+
+I used the photo [here](https://github.com/sui77/rc-switch/wiki/HowTo_OperateLowCostOutlets).   
 
 - Generic.   
 Directly specify the ON and OFF codes.   
