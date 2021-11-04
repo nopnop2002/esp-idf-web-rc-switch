@@ -1,5 +1,5 @@
 # esp-idf-web-rc-switch
-433/315Mhz RF ON/OFF Switch for esp-idf.
+433/315Mhz RF ON/OFF Switch for esp-idf.   
 You can turn ON/OFF RF OUTLET using a browser.   
 
 I used [this](https://github.com/Molorius/esp32-websocket) component.   
@@ -18,7 +18,7 @@ I used this:
 ![H3V4F-3](https://user-images.githubusercontent.com/6020549/125154246-0ded5880-e194-11eb-974b-03232166ab12.JPG)
 
 
-- Outlet that can be turned ON/OFF by RF,   
+- Outlet that can be turned ON/OFF by RF.   
 
 
 # Installation
@@ -44,9 +44,6 @@ You can use Static IP.
 You can connect using mDNS name.   
 ![config-wifi-3](https://user-images.githubusercontent.com/6020549/140235866-2a3e692e-69b6-4767-b1c5-d16e59a74903.jpg)
 
-Connect to built-in HTTP server using mDNS.   
-![browser-2](https://user-images.githubusercontent.com/6020549/124376400-d12be800-dce1-11eb-8c24-46fda2fa4283.jpg)
-
 ## Radio Setting
 ![config-radio](https://user-images.githubusercontent.com/6020549/140235926-66f2f5d5-c3f9-460b-ad6b-c7cf9fd8b715.jpg)
 
@@ -61,6 +58,7 @@ Connect to built-in HTTP server using mDNS.
 ![config-outlet-2](https://user-images.githubusercontent.com/6020549/140235976-d145fd2d-79b3-406c-90fd-7b39677193f1.jpg)
 
 - Generic.   
+Directly specify the ON and OFF codes.   
 ![config-outlet-3](https://user-images.githubusercontent.com/6020549/140235972-0de0384e-aabc-463e-8223-6314d2283031.jpg)
 
 # Wirering
@@ -74,4 +72,8 @@ Connect to built-in HTTP server using mDNS.
 You can change data pin to any pin using menuconfig.   
 __However, changing to some pins does not work properly.__
 
+
+# WEB Page   
+The WEB page is stored in the html folder.   
+You can change it as you like.   
 
