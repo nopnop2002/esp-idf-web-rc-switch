@@ -68,7 +68,7 @@ Directly specify the ON and OFF codes.
 
 # Wirering
 
-|Radio Module||ESP32|
+|RF Module||ESP32|
 |:-:|:-:|:-:|
 |DATA|--|GPIO4|
 |GND|--|GND|
@@ -81,6 +81,11 @@ __However, changing to some pins does not work properly.__
 # WEB Page   
 The WEB page is stored in the html folder.   
 You can change it as you like.   
+
+
+# Task Structure Diagram
+![Task_structure_diagram](https://user-images.githubusercontent.com/6020549/140486200-42b1f10b-c386-433f-ac6d-e91cc24b0a44.JPG)
+
 
 # Reference   
 https://github.com/nopnop2002/esp-idf-rc-switch
