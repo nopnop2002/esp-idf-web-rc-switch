@@ -84,7 +84,7 @@ You can change it as you like.
 
 
 # Task Structure Diagram
-![Task_structure_diagram](https://user-images.githubusercontent.com/6020549/140486200-42b1f10b-c386-433f-ac6d-e91cc24b0a44.JPG)
+![Task_structure_diagram](https://user-images.githubusercontent.com/6020549/140486779-67b4fab3-224b-49b8-b670-0da60552dca7.JPG)
 
 
 # Reference   
