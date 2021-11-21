@@ -445,7 +445,11 @@ void app_main() {
 #endif
 			} // end of off-request
 
-		}
-	}
+		} // end of if
+
+		// Delete a cJSON structure
+		cJSON_Delete(root);
+
+	} // end of while
 
 }
