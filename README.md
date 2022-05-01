@@ -29,6 +29,7 @@ I used this:
 git clone https://github.com/nopnop2002/esp-idf-web-rc-switch
 cd esp-idf-web-rc-switch
 git clone https://github.com/Molorius/esp32-websocket components/websocket
+idf.py set-target {esp32/esp32s2/esp32s3/esp32c3}
 idf.py menuconfig
 idf.py flash
 ```
@@ -78,7 +79,7 @@ You can change data pin to any pin using menuconfig.
 __However, changing to some pins does not work properly.__
 
 
-# WEB Page   
+# WEB Page
 The WEB page is stored in the html folder.   
 You can change it as you like.   
 
@@ -87,5 +88,6 @@ You can change it as you like.
 ![Task_structure_diagram](https://user-images.githubusercontent.com/6020549/140486779-67b4fab3-224b-49b8-b670-0da60552dca7.JPG)
 
 
-# Reference   
+# Reference
+
 https://github.com/nopnop2002/esp-idf-rc-switch
