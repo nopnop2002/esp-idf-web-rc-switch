@@ -15,7 +15,7 @@ It's a great job.
 
 # Hardware requirements
 - 315MHz/433MHz ASK Wireless transmitter like this.   
-H34A-433/H34A-315   
+H34A-3125/H34A-433   
 SYN115   
 STX882   
 
@@ -26,6 +26,8 @@ I used this:
 
 - Outlet that can be turned ON/OFF by RF.   
 
+![SmartOutlet](https://user-images.githubusercontent.com/6020549/172750850-bdc786a4-680f-4bd0-a75b-832a333970b4.jpg)
+![SmartSwitch](https://user-images.githubusercontent.com/6020549/172750746-a4de0c1d-cf3c-4429-821f-b4cb60a63bee.jpg)
 
 # Installation
 ```
