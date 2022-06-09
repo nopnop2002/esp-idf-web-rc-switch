@@ -15,7 +15,7 @@ It's a great job.
 
 # Hardware requirements
 - 315MHz/433MHz ASK Wireless transmitter like this.   
-H34A-3125/H34A-433   
+H34A-315/H34A-433   
 SYN115   
 STX882   
 
