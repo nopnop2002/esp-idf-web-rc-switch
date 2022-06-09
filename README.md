@@ -4,6 +4,9 @@ You can turn ON/OFF Wireless Remote Socket Switch/Outlet Switch using a browser.
 
 ![web-rc-switch](https://user-images.githubusercontent.com/6020549/140236843-fffad16b-087e-4785-8f26-f8f8bf7c8f12.JPG)
 
+![rc_switch](https://user-images.githubusercontent.com/6020549/172749601-bc45feec-fd0d-484b-a489-9f15698289b7.JPG)
+
+
 I used [this](https://github.com/Molorius/esp32-websocket) component.   
 This component can communicate directly with the browser.   
 There is an example of using the component [here](https://github.com/Molorius/ESP32-Examples).
