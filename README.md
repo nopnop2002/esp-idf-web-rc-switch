@@ -1,5 +1,5 @@
 # esp-idf-web-rc-switch
-315/433Mhz SMART Switch for esp-idf.   
+315/433MHz RF ON/OFF Switch using esp32.   
 You can turn ON/OFF Wireless Smart Outlet using a browser.   
 
 ![web-rc-switch](https://user-images.githubusercontent.com/6020549/140236843-fffad16b-087e-4785-8f26-f8f8bf7c8f12.JPG)
