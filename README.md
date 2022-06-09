@@ -27,8 +27,8 @@ I used this:
 - Outlet that can be turned ON/OFF by RF.   
 
 ![SmartOutlet](https://user-images.githubusercontent.com/6020549/172750850-bdc786a4-680f-4bd0-a75b-832a333970b4.jpg)
-![SmartOutlet2](https://user-images.githubusercontent.com/6020549/172752260-f553fa56-0d60-4bcb-837d-2f035b7d9c79.jpeg)
 ![SmartSwitch](https://user-images.githubusercontent.com/6020549/172750746-a4de0c1d-cf3c-4429-821f-b4cb60a63bee.jpg)
+![SmartOutlet2](https://user-images.githubusercontent.com/6020549/172752260-f553fa56-0d60-4bcb-837d-2f035b7d9c79.jpeg)
 
 # Installation
 ```
