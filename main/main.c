@@ -1,11 +1,13 @@
 /*
-	 Serial monitor client example using WEB Socket.
-	 This example code is in the Public Domain (or CC0 licensed, at your option.)
-	 Unless required by applicable law or agreed to in writing, this
-	 software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-	 CONDITIONS OF ANY KIND, either express or implied.
+	Serial monitor client example using WEB Socket.
+	This example code is in the Public Domain (or CC0 licensed, at your option.)
+	Unless required by applicable law or agreed to in writing, this
+	software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+	CONDITIONS OF ANY KIND, either express or implied.
 */
 
+#include <stdio.h>
+#include <inttypes.h>
 #include "string.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
@@ -176,6 +178,9 @@ void initialise_mdns(void)
 	ESP_ERROR_CHECK( mdns_hostname_set(CONFIG_MDNS_HOSTNAME) );
 	ESP_LOGI(TAG, "mdns hostname set to: [%s]", CONFIG_MDNS_HOSTNAME);
 
+	//initialize service
+	ESP_ERROR_CHECK( mdns_service_add(NULL, "_http", "_tcp", 80, NULL, 0) );
+
 #if 0
 	//set default mDNS instance name
 	ESP_ERROR_CHECK( mdns_instance_name_set("ESP32 with mDNS") );
@@ -210,10 +215,10 @@ void websocket_callback(uint8_t num,WEBSOCKET_TYPE_t type,char* msg,uint64_t len
 			}
 			break;
 		case WEBSOCKET_BIN:
-			ESP_LOGI(TAG,"client %i sent binary message of size %i:\n%s",num,(uint32_t)len,msg);
+			ESP_LOGI(TAG,"client %i sent binary message of size %"PRIi32":\n%s",num,(uint32_t)len,msg);
 			break;
 		case WEBSOCKET_PING:
-			ESP_LOGI(TAG,"client %i pinged us with message of size %i:\n%s",num,(uint32_t)len,msg);
+			ESP_LOGI(TAG,"client %i pinged us with message of size %"PRIi32":\n%s",num,(uint32_t)len,msg);
 			break;
 		case WEBSOCKET_PONG:
 			ESP_LOGI(TAG,"client %i responded to the ping",num);
